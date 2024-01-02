@@ -22,6 +22,9 @@ section{
 h1{
     font-size: 2.5rem;
 }
+.container{
+    margin-top: -45px;
+}
 
 .seccion-oscura{
     color: white;
@@ -106,7 +109,7 @@ h1{
 /* Experiencia */
 
 .experiencia{
-    padding: 40px 40px 60px 40px;
+    padding: 80px 40px 60px 40px;
 }
 
 .experiencia .columna{
@@ -244,7 +247,7 @@ h1{
 }
 
 .overlay p{
-    color: #ff00ee;
+    color: #9b9b9b;
     font-family: 'Bebas Neue', cursive;
 }
 
@@ -252,7 +255,9 @@ h1{
 
 .articulos{
     min-height: 15px;
-    padding: 30px;
+    padding: 80px;
+    position: relative;
+    top: -65px;
 }
 
 .articulos .card{
@@ -327,7 +332,7 @@ h1{
 .contacto .container{
     max-width: 1100px;
     min-height: 200px;
-    padding: 20px;
+    padding: 50px;
 }
 
 .contacto .rectangulo{
