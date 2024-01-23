@@ -326,6 +326,12 @@
                   <i class="bi bi-envelope-check-fill"></i>
                 </button>
               </a>
+              <div class="container-email">
+                <div class="copy-text">
+                  <input  readonly type="text" class="text" value="holasoymalave@gmail.com" />
+                  <button><i class="fa fa-clone">Copiar</i></button>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -360,7 +366,17 @@
       var fechaActual = new Date();
       var year = fechaActual.getFullYear();
       document.getElementById("year").textContent = year
-      console.log(year);
+      let copyText = document.querySelector(".copy-text");
+      copyText.querySelector("button").addEventListener("click", function () {
+	    let input = copyText.querySelector("input.text");
+	    input.select();
+	    document.execCommand("Copied");
+	    copyText.classList.add("active");
+	    window.getSelection().removeAllRanges();
+	    setTimeout(function () {
+		  copyText.classList.remove("active");
+	     }, 2500);
+    });
     </script>
     <!-- JAVASCRIPT -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js">
