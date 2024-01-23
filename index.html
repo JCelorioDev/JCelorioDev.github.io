@@ -352,10 +352,18 @@
         </a>
       </div>
       <div class="derechos-de-autor">
-        Creado por Jahir Alexander Celorio Malavé (2024) &#169;
+        Creado por Jahir Alexander Celorio Malavé (<span id="year"></span>) &#169;
       </div>
     </footer>
+    <!-- Para actualizar el año actual -->
+    <script>
+      var fechaActual = new Date();
+      var year = fechaActual.getFullYear();
+      document.getElementById("year").textContent = year
+      console.log(year);
+    </script>
     <!-- JAVASCRIPT -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js">
+    </script>
 </body>
 </html>
